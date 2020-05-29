@@ -1,0 +1,35 @@
+mat-card{
+    height: auto;
+    margin-left: 25%;
+}
+h3{
+    padding-top:10%;
+    padding-left: 25%;
+    color: grey;
+}
+a{
+    cursor: pointer;
+    width: 100%;
+    padding-top: 2%;
+}
+.card{
+    background-color: rgba(128, 128, 128, 0.575);
+    width: 105%;
+    padding-left: 5%;
+}
+.option{
+
+    padding-left: 5%;
+}
+iframe{
+    margin-left: 10%;
+}
+.row{
+    margin-right: 15px;
+}
+@media only screen and (max-width: 600px) {
+    mat-card{
+        margin-left: 0%;
+        width: 100%!important;
+    }
+}

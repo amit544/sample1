@@ -1,0 +1,1300 @@
+<html>
+  <head>
+    <head>
+      <meta content="Tafl,University Answer ,AKTU Answer,AKTU Previous year Solution" name="Description" />
+      <meta  name="keywords"  content="Gate CS ALL subject free notes, gainngain,GainnGain,Gain&Gain,Placement question" />
+      <meta  name="keywords"  content="Gain&Gain" />
+      <meta name="keywords" content="Gain&Gain - GATE FREE NOTES UNIVERSITY PAST YEAR ANSWERS PROGRAMMING ,gate,QUIZ, CS ,IT ,MECHNICAL" property="og:title" />
+      <meta content="website" property="og:type" />
+       <meta content="https://www.gainngain.in/#/Tocuniversity" property="og:url" />
+      </head>
+  </head>
+</html>
+<body>
+  
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+   <button mat-button (click)="tabGroup.selectedIndex=0">Unit-1</button>
+   <button mat-button (click)="tabGroup.selectedIndex=7">Unit-2</button>
+   <button mat-button (click)="tabGroup.selectedIndex=11">Unit-3</button>
+  </div>
+</div>
+<div class="row">
+    <div class="col-md">
+  
+       
+      
+    </div>
+<div class="col-md-8">  
+<mat-tab-group  headerPosition="below" mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" #tabGroup >
+    <mat-tab label="01" value="none" >
+      <ng-template matTabContent>
+        <div> 
+            <div class="row total">
+                <mat-card id="first">
+                    <div class="card">
+                        <h3 style="text-align: center;">UNIT-1 : Basic concepts and automata theory</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5>1. Define NFA. What are various points of difference between NFA & DFA? ( 10 Marks)</h5>
+                            <p>
+                                  <b>Solution :</b>
+
+                              <li>NFA stands for non-deterministic finite automata. </li>
+                              <li> The finite automata are called NFA when there exist many paths for specific input from the current state to the next state.</li>
+                            </p>
+                            <p>A NFA is a collection of 5-tuples :</p>
+                            <p>
+                                <li>Q: finite set of states  </li>
+                                <li>∑: finite set of the input symbol </li>
+                                <li>q0: initial state   </li>
+                                <li>4.F: final state  </li>
+                                <li>δ: Transition function</li>
+                            </p>
+                            <h6 style="text-align: center;">Difference between NFA & DFA:</h6>
+                            <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>DFA</th>
+                                    <th>NFA</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Here transition function is:  δ: Q x ∑→Q </td>
+                                    <td>Here transition function is :    δ: Q x ∑ →2^Q</td>
+                                  </tr>
+                                  <tr>
+                                    <td>It is possible to use backtracking in DFA.</td>
+                                    <td>It is possible to use backtracking in DFA.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Given its complex nature, it is tougher to construct DFA.</td>
+                                    <td>Given its complex nature, it is tougher to construct DFA.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>All DFAs are derived from NFAs</td>
+                                    <td>All NFAs are not DFAs.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>The total time required for running any input string in DFA is less than what it is in NFA.</td>
+                                    <td>The total time required for running any input string in NFA is larger than that in comparison to DFA.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>All DFAs are derived from NFAs</td>
+                                    <td>All NFAs are not DFAs.</td>
+                                  </tr>
+                                  <tr>
+                                    <td>The full form of DFA is Deterministic Finite Automata</td>
+                                    <td>The full form of NFA is Nondeterministic Finite Automata (NFA).</td>
+                                  </tr>
+                                   <tr>
+                                    <td>More space allocation needed.</td>
+                                    <td>Less space needed</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+                    </div>
+                  
+                
+                
+                    </mat-card>
+            </div>
+        </div> 
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="02" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <h3 style="text-align: center;">UNIT-1 : Basic concepts and automata theory</h3>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <h5> 2.What are various points of difference between Moore & Mealy Machine? Explain the procedure to convert a Moore machine into mealy machine.(10 marks)</h5>
+                              <p>
+                                    <b>Solution :</b>
+                              </p>
+                              <p>A NFA is a collection of 5-tuples :</p>
+                              <h6 style="text-align: center;">Difference between Moore & Mealy Machine</h6>
+                              <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th>Moore Machine </th>
+                                      <th>Mealy Machine </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Output depends only upon present state.  </td>
+                                      <td>Output depends on present state as well as present input. </td>
+                                    </tr>
+                                    <tr>
+                                      <td>If input changes, output does not change</td>
+                                      <td>If input changes, output also changes. </td>
+                                    </tr>
+                                    <tr>
+                                      <td>More number of states are required.</td>
+                                      <td>Less number of states are required. </td>
+                                    </tr>
+                                    <tr>
+                                      <td>There is more hardware requirement</td>
+                                      <td>There is less hardware requirement.</td>
+                                    </tr>
+                                    <tr>
+                                      <td>They react slower to inputs(One clock cycle later) </td>
+                                      <td>They react faster to inputs. </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Synchronous output and state generation</td>
+                                      <td>Asynchronous output generation. </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Output is placed on states. </td>
+                                      <td>Output is placed on transitions.</td>
+                                    </tr>
+                                     <tr>
+                                      <td>Easy to design.</td>
+                                      <td>It is difficult to design. </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p>Procedure to convert Moore to Mealy Machine:</p>
+                                <p>
+                                <li>Take a blank Mealy Machine transition table format</li>
+                                <li>Copy all the Moore Machine transition states into this table format.</li>
+                                <li>Check the present states and their corresponding outputs in the Moore Machine state table; if for a state Qi output is m, copy it into the output columns of the Mealy Machine state table wherever Qi appears in the next state.</li>
+                               </p>
+                              </div>
+                          </div>
+                      </div>
+                    
+                  
+                  
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="03" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="third">
+                      <div class="card">
+                          <h3 style="text-align: center;">UNIT-1 : Basic concepts and automata theory</h3>
+                          <div class="row">
+                              <div class="col-md">
+                                <h5> 3.Minimize the following Automata: (10 Marks)</h5>
+                              <p>
+                                <img src="../../assets/toc/Picture1.png" class=" img-fluid rounded" alt="...">
+                              </p>
+                              <p>Solution:</p>
+                              <p>1.Delete the unreachable state from initial state. (here no such state ).</p>
+                              <p>2.Make transition table:</p>
+                              <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th></th>
+                                      <th>a</th>
+                                      <th>b</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>q0</td>
+                                      <td>q6</td>
+                                      <td>q2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>q1</td>
+                                        <td>q0</td>
+                                        <td>q2</td>
+                                      </tr>
+                                      <tr>
+                                        <td>q2</td>
+                                        <td>q3</td>
+                                        <td>q0</td>
+                                      </tr>
+                                      <tr>
+                                        <td>q3</td>
+                                        <td>q5</td>
+                                        <td>q4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>q4</td>
+                                        <td>q6</td>
+                                        <td>q5</td>
+                                      </tr>
+                                     <tr>
+                                        <td>q5</td>
+                                        <td>q2</td>
+                                        <td>q4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>*q6</td>
+                                        <td>q1</td>
+                                        <td>q5</td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+                                <p>3.Mark the final states with *</p>
+                                <p>4
+                                <li>0 Eq -> [q0,q1,q2,q3,q4,q5] [q6]</li>
+                                <li>1 Eq -> [q0,q4] [q1,q2,q3,q5][q6]</li>
+                                <li>2 Eq -> [q0,q4] [q1] [q2,q3,q5][q6]</li>
+                                <li> 3 Eq -> [q0,q4] [q1] [q2,q3,q5][q6]</li>
+                               </p>
+                               <p>5.Now the minimized DFA have four transition i.e. [q0q4],[q1],[q2,q3,q5] & [q6]</p>
+                               <p>6. Minimized  DFA is : </p>
+                               <p>
+                                <img src="../../assets/toc/2.png" class="img-fluid rounded " alt="...">
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                      </mat-card>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="04" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="fourth">
+                      <div class="card">
+                          <h3 style="text-align: center;">UNIT-1 : Basic concepts and automata theory</h3>
+                          <div class="row">
+                              <div class="col-md">
+                                <h5> 4.Convert the following NFA {{opening}}p,q,r,s {{closing}},{{opening}}0,1{{closing}}, δ,p,{{opening}}q,s{{closing}} into DFA where δ is given by:  (10 Marks)</h5>
+                              <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th></th>
+                                      <th>0</th>
+                                      <th>1</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>->p</td>
+                                      <td>q,s</td>
+                                      <td>q</td>
+                                    </tr>
+                                    <tr>
+                                        <td>*q</td>
+                                        <td>r</td>
+                                        <td>q,r</td>
+                                      </tr>
+                                      <tr>
+                                        <td>r</td>
+                                        <td>s</td>
+                                        <td>p</td>
+                                      </tr>
+                                      <tr>
+                                        <td>*s</td>
+                                        <td>φ</td>
+                                        <td>p</td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+                                <p> Sol-  Method: Subset Construction</p>
+                               <p>1.Transition table of NFA</p>
+                               <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th>0</th>
+                                    <th>1</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>->p</td>
+                                    <td>q,s</td>
+                                    <td>q</td>
+                                  </tr>
+                                  <tr>
+                                      <td>*q</td>
+                                      <td>r</td>
+                                      <td>q,r</td>
+                                    </tr>
+                                    <tr>
+                                      <td>r</td>
+                                      <td>s</td>
+                                      <td>p</td>
+                                    </tr>
+                                    <tr>
+                                      <td>*s</td>
+                                      <td>φ</td>
+                                      <td>p</td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                              <p>2.State transition table for DFA:</p>
+                              <table class="table table-striped">
+                               <thead>
+                                 <tr>
+                                   <th></th>
+                                   <th>0</th>
+                                   <th>1</th>
+                                 </tr>
+                               </thead>
+                               <tbody>
+                                 <tr>
+                                   <td>->[p]</td>
+                                   <td>[q s]</td>
+                                   <td>[q]</td>
+                                 </tr>
+                                 <tr>
+                                     <td>*[q s]</td>
+                                     <td>[r]</td>
+                                     <td>[q r p]</td>
+                                   </tr>
+                                   <tr>
+                                     <td>[r]</td>
+                                     <td>[s]</td>
+                                     <td>[p]</td>
+                                   </tr>
+                                   <tr>
+                                     <td>*[q r p]</td>
+                                     <td>[q r s]</td>
+                                     <td>[q r p]</td>
+                                   </tr>
+                                   <tr>
+                                    <td>*[s]</td>
+                                    <td>[D]</td>
+                                    <td>[p]</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*[q r s]</td>
+                                    <td>[ r s]</td>
+                                    <td>[q r p]</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*[q]</td>
+                                    <td>[r]</td>
+                                    <td>[q r]</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*[r s]</td>
+                                    <td>[s]</td>
+                                    <td>[p]</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*[q r]</td>
+                                    <td>[r s]</td>
+                                    <td>[q r p]</td>
+                                  </tr>
+                                  <tr>
+                                    <td>D</td>
+                                    <td>D</td>
+                                    <td>D</td>
+                                  </tr>
+                               </tbody>
+                             </table>
+                             <p> DFA is</p>
+                               <p>
+                                <img src="../../assets/toc/3.png" class="img-fluid rounded " alt="...">
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                      </mat-card>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="05" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="fourth">
+                      <div class="card">
+                          <h3 style="text-align: center;">UNIT-1 : Basic concepts and automata theory</h3>
+                          <div class="row">
+                              <div class="col-md">
+                                <h5> 5.Design the DFA for languages L containing strings of 0 and 1’s where number of 0’s is not divisible by 3.  (2 marks)</h5>
+                                <p> Sol-  ∑={{opening}}0,1{{closing}}</p>
+                               <p>L={{opening}}set of all strings where no. of 0’s is not divisible b{{closing}}</p>
+                               <p>={{opening}}0,00,01,10,0000,1100,…………..{{closing}}</p>
+                               <p>DFA is :</p>
+                               <p>
+                                <img src="../../assets/toc/4.png" class="img-fluid rounded " alt="...">
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md">
+                              <h5> 6.What are the applications of finite automata?  (2 Marks)</h5>
+                              <p> Sol- Applications of finite automata are:</p>
+                             <p>
+                              <li> For the designing of lexical analysis of a compiler. </li>
+                              <li>For recognizing the pattern using regular expressions. </li>
+                              <li> For the designing of the combination and sequential circuits using Mealy and Moore Machines. </li>
+                              <li>>Used in text editors. </li>
+                              <li>For the implementation of spell checkers. </li>
+                             </p>
+                            </div>
+                        </div>
+                    </div>
+                      </mat-card>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="06" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="fourth">
+                      <div class="card">
+                          <h3 style="text-align: center;">UNIT-1 : Basic concepts and automata theory</h3>
+                          <div class="row">
+                              <div class="col-md">
+                                <h5> 7.Define Deterministic Finite automata(DFA) and design a DFA that accepts the binary number whose equivalent is divisible by 5.</h5>
+                                <p>In a DFA, for a particular input character, the machine goes to one state only. A transition function is 
+                                 defined on every state for every input symbol.
+                                  Also in DFA null (or ε) move is not allowed, i.e., DFA cannot change state without any input character.</p>
+                               <p>A DFA can be represented by a 5-tuple (Q, ∑, δ, q0, F) </p>
+                               <p>
+                                 <li>Q is a finite set of states.</li>
+                                 <li>∑ is a finite set of symbols called the alphabet.</li>
+                                 <li>δ is the transition function where δ: Q × ∑ → Q </li>
+                                 <li>q0 is the initial state from where any input is processed (q0 ∈ Q).</li>
+                                 <li>F is a set of final state/states of Q (F ⊆ Q).</li>
+                               </p>
+                               <p>A DFA is represented by digraphs called state diagram.</p>
+                               <p>
+                                 
+                                <li> The vertices represent the states.</li>
+                                <li>The arcs labeled with an input alphabet show the transitions.</li>
+                                <li>The initial state is denoted by an empty single incoming arc.</li>
+                                <li>The final state is indicated by double circles.</li>
+        
+                               </p>
+                               <p>∑={{opening}}0,1{{closing}}</p>
+                               <p> L={{opening}}accepts the binary number whose equivalent is divisible by 5{{closing}}</p>
+                               <p> ={{opening}}ε,0,00,000,101,1111,………………..{{closing}}</p>
+                               <p>
+                                <img src="../../assets/toc/5.png" class="img-fluid rounded " alt="...">
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                      </mat-card>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="07" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="fourth">
+                      <div class="card">
+                          <h3 style="text-align: center;">UNIT-1 : Basic concepts and automata theory</h3>
+                          <div class="row">
+                              <div class="col-md">
+                                <h5> 8.Design a FA which accepts set of strings containing  exactly four 1’s in every string over ∑={{opening}}0,1{{closing}}</h5>
+                                <p>Sol -∑={{opening}}0,1{{closing}}</p>
+                                <P>L=∑={{opening}}set of strings containing exactly four 1’s in every string{{closing}}</P>
+                                <p>={{opening}}1111,10111,110011,…………………………….{{closing}}</p>
+                                <p>
+                                  <img src="../../assets/toc/8.png" class="img-fluid rounded " alt="...">
+                                </p>
+                                <div class="card">
+                                  <div class="row">
+                                    <div class="col-md">
+                                  <h5> 9.Construct a NFA for the language L which accept all the strings in which the third symbol from right end is always a, over ∑={{opening}}a,b{{closing}}</h5>
+                                <p>Sol -∑={{opening}}a,b{{closing}}</p>
+                                <P>L=∑={{opening}}accepts all the strings in which third symbol from right end is always a{{closing}}</P>
+                                <p>={{opening}}abb,aaa,aba,aab,babb,…………………………………..{{closing}}</p>
+                                <p>
+                                  <img src="../../assets/toc/9.png" class="img-fluid rounded " alt="...">
+                                </p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="card">
+                                  <p>10.Construct DFA equivalent to NFA where δ is defined in the following table:</p>
+                              <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th>Q</th>
+                                      <th>δ(q,a)</th>
+                                      <th>δ(q,b)</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>A</td>
+                                      <td>A,B</td>
+                                      <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B</td>
+                                        <td>A</td>
+                                        <td>B</td>
+                                      </tr>
+                                      <tr>
+                                        <td>*C</td>
+                                        <td>-</td>
+                                        <td>A,B</td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+                                <p> Sol-  Method: Subset Construction</p>
+                               <p>1.Transition table of NFA</p>
+                               <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Q</th>
+                                    <th>δ(q,a)</th>
+                                    <th>δ(q,b)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>A</td>
+                                    <td>A,B</td>
+                                    <td>C</td>
+                                  </tr>
+                                  <tr>
+                                      <td>B</td>
+                                      <td>A</td>
+                                      <td>B</td>
+                                    </tr>
+                                    <tr>
+                                      <td>*C</td>
+                                      <td>-</td>
+                                      <td>A,B</td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                              <p>2.State transition table for DFA:</p>
+                              <table class="table table-striped w-100">
+                               <thead>
+                                 <tr>
+                                   <th></th>
+                                   <th>a</th>
+                                   <th>b</th>
+                                 </tr>
+                               </thead>
+                               <tbody>
+                                 <tr>
+                                   <td>->[A]</td>
+                                   <td>[A B]</td>
+                                   <td>[C]</td>
+                                 </tr>
+                                 <tr>
+                                     <td>*[A B]</td>
+                                     <td>[A B]</td>
+                                     <td>[B C]</td>
+                                   </tr>
+                                   <tr>
+                                     <td>*[C]</td>
+                                     <td>[D](dead state)</td>
+                                     <td>[AB]</td>
+                                   </tr>
+                                   <tr>
+                                     <td>*[B C]</td>
+                                     <td>[A]</td>
+                                     <td>[A B]</td>
+                                   </tr>
+                                   <tr>
+                                    <td>[D]</td>
+                                    <td>[D]</td>
+                                    <td>[D]</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*[q r s]</td>
+                                    <td>[ r s]</td>
+                                    <td>[q r p]</td>
+                                  </tr>
+                               </tbody>
+                             </table>
+                                <P> Let [A]=q0 </P>
+                                <P>  [C]=q1</P>
+                                <P> [AB]=q2</P>
+                                <P> [BC]=q3</P>
+                                <P> [D]=[φ]</P>
+                             </div>
+                             <p> DFA is</p>
+                               <p>
+                                <img src="../../assets/toc/10.png" class="img-fluid rounded " alt="...">
+                              </p>
+                              </div>
+                          </div>
+                      </div>
+                      </mat-card>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="08" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <h3 style="text-align: center;">
+                            UNIT-2 : Regular Expressions & languages</h3>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <h5> 1.State and prove Arden’s theorem. (2 Marks)</h5>
+                              <p>
+                                    <b>Solution : Statement −</b>
+                              </p>
+                              <p>Let P and Q be two regular expressions</p>
+                              <p>If P does not contain null string, then
+                                R = Q + RP has a unique solution that is R = QP*</p>
+                                <b>Proof −</b>
+                                <p>R = Q + (Q + RP)P          [ R = Q + RP]</p>
+                                <p>= Q + QP + RPP</p>
+                                 <p> On putting the value of R again and again, we get −</p>
+                                 <p>R = Q + QP + QP2 + QP3…..</p>
+                                 <p>R = Q (ε + P + P2 + P3 + …. )</p>
+                                 <p>R = QP*         [P* = (ε + P + P2 + P3 + ….) ]</p>
+                                 <b> Hence proved.</b>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5> 2.Write the regular expression for a language for a language containing strings of 0’s and 1’s which does not end in ‘101’. (2 Marks)</h5>
+                            <p>
+                                  <b>Solution :∑ ={{opening}}0,1{{closing}}</b>
+                            </p>
+                            <p>L={{opening}}strings of 0’s and 1’s which does not end in ‘01’{{closing}}</p>
+                            <p>{{opening}}ε,0,1,00,10,11,0010,………………….{{closing}}</p>
+                              <b>Regular Expression is:</b>
+                              <p>(1+0)*00 +(1+0)*10+(1+0)*11 + ε+0+1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="row">
+                          <div class="col-md-12">
+                            <h5> 3.Write regular expressions for each of the following languages containing the strings over {{opening}}0,1{{closing}}in which there are at least two occurrences of 1’s between any two occurrences of 0’s.    (2 Marks)</h5>
+                          <p>
+                                <b>Solution :∑ ={{opening}}0,1{{closing}}</b>
+                          </p>
+                          <p>L={{opening}}set of string in which there are at least two occurrences of 1’s between any two occurrences of 0’s {{closing}}</p>
+                          <p>{{opening}}ε,000,01100,………………………………{{closing}}</p>
+                            <p>R=(0(11)*0(11)*0)*</p>
+                          </div>
+                      </div>
+                  </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="09" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                                <h5> 4.Find the regular expression of given FA using Arden’s theorem.</h5>
+                                <p>
+                                  <img src="../../assets/toc/24.png" class="img-fluid rounded " alt="...">
+                                </p>
+                              <p>
+                                    <b>Solution : q0=q0b+q2a+ ε</b>
+                              </p>
+                              <p>q1=q0a+q1b =>q1=q0ab*     (R=QP*)</p>
+                              <p>q2=q2b+q1a=>q2=q1ab*       (R=QP*)</p>
+                                <p>         =q0ab*ab*----------(1)</p>
+                                <p>q0=q0b+q0ab*ab*a+ ε</p>
+                                 <p>    =(b+ab*ab*a)*       (R=QP*)</p>
+                                 <p>On putting the value of q0 in eq-1 we have,</p>
+                                 <p>Rq2=(b+ab*ab*a)*ab*ab*</p>
+                                 <p>Regular Expression is (b+ab*ab*a)*ab*ab*</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5> 5.Discuss closure properties i.e., concatenation, union, intersection, complement of regular languages.</h5>
+                            <p>
+                                  <b>Concatenation:</b>
+                            </p>
+                            <p> If L1 and if L2 are two regular languages, their concatenation L1L2 will also be regular.</p>
+                            <p>
+                              <b>Union:</b>
+                            </p>
+                        <p> Let L and M be the languages of regular expressions R and S, respectively.Then R+S is a regular expression whose language is(L U M). </p>
+                        <p>
+                          <b>Intersection:</b>
+                        </p>
+                    <p>
+                      Let L and M be the languages of regular expressions R and S, respectively then it a regular expression whose language is L intersection M.</p>
+                      <b>Complement:</b>
+                
+                <p>
+                  
+                  The complement of a language L (with respect to an alphabet E such that E* contains L) is E*–L. Since E* is surely regular, the complement of a regular language is always regular. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="row">
+                          <div class="col-md-12">
+                            <h5> 6.Using Pumping lemma, prove that the languages L={{opening}}0^n|n is prime {{closing}} is not regular.</h5>
+                          <p>
+                                <b>Solution :</b>
+                          </p>
+                          <p>Step1- let ,
+                            L is a regular, p be a the number of states in the finite automata accepting L.</p>
+                          <p>{{opening}}ε,000,01100,………………………………{{closing}}</p>
+                            <p>R=(0(11)*0(11)*0)*</p>
+                            <p>Step2- let,
+                              p be a prime number greater than p and w=a^q.</p>
+                              <p>by pumping lemma, w =xyz , |xy| <= q and |y|>0, x,y &z are the simple strings of a’s</p>
+                              <p>so, y=a^m, 1 <=m<=q</p>
+                              <p>step3- let,   i=p+1 =>|x(y^i)z|=|xyz|+|y^(i-1)|=p+(i-1)m=p+pm,</p>
+                              <p>by pumping lemma, x(y^i)z ϵ L. </p>
+                              <p>but |x (y^i)z|=p+pm=p(1+m) and p(1+m) is not prime. </p>
+                              <p>So, x(y^i) z ϵ L. This is contradiction. Thus, L is not regular.</p>
+                          </div>
+                      </div>
+                  </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="10" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                                <h5> 7.Find the regular expression using Arden’s Theorem of FA given below.</h5>
+                                <p>
+                                  <img src="../../assets/toc/27.png" class="img-fluid rounded " alt="...">
+                                </p>
+                              <p>
+                                    <b>Solution :</b>
+                              </p>
+                             <p>    q1= ε</p> 
+                             <p>   q2=q1a +q2a+q4a</p> 
+                             <p>   q3=q2b+q3b+q4b</p> 
+                             <p>  q4=q3a</p> 
+                             <p>  q3=q2b+q3b+q3ab=q2+q3(b+ab)=q2b(b+ab)*    (R=QP*)</p> 
+                             <p>  q2=a+ q2a+q3aa= a+q2a+q2b(b+ab)*aa=a+q2(a+b(b+ab)*aa)=a(a+b(b+ab)*aa)*</p> 
+                             <p>  (R=QP*)</p> 
+                             <p>   q4=q3a=a(a+b(b+ab)*aa)*b(b+ab)*a       (R=QP*)</p> 
+                             <p>  Regular expression is: </p> 
+                             <p>  a(a+b(b+ab)*aa)*b(b+ab)*a</p> 
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5> 8.State and prove Kleene’s theorem with example.</h5>
+                            <p>
+                                 Ans -Statement:
+                            </p>
+                          <p>It states that any regular language is accepted by a FA and conversely that any language accepted by an FA is regular.</p>   
+
+                           <p>Proof: This is going to be proven by (general) induction following the recursive definition of regular language. 
+                            As shown below the languages φ, {{opening}}ꓥ{{closing}} and {{opening}} a {{closing}} for any symbol a in ∑ are accepted by an FA. </p>  
+                            <p>
+                              <img src="../../assets/toc/28.png" class="img-fluid rounded " alt="...">
+                            </p>
+                            <p>Inductive Step: We are going to show that for any languages L1 and L2 if they are accepted by FAs, then L1UL2 , 
+                              L1L2 and L1* are accepted by FAs. Since any regular language is obtained from {{opening}}ꓥ{{closing}} and {{opening}} a {{closing}} for any symbol a in ∑
+                               by using union, concatenation and Kleene star operations, that together with the Basis Step would prove the theorem. 
+                            </p>
+                               <p>Suppose that L1 and L2 are accepted by FAs M1 = < Q1 , ∑, q1,0 , δ1 , A1 > and M2 = < Q2 , ∑, q2,0 , δ2 , A2 > ,
+                                 respectively. We assume that Q1 ꓵQ2 = φ without loss of generality since states can be renamed if necessary. </p>
+                               <p>Then L1ꓴ L2 , L1L2 and L1* are accepted by the FAs Mu = < Qu , ∑, qu,0 , δu , Au > , Mc = < Qc , ∑, qc,0 , δc , 
+                                Ac > and Mk = < Q2 , ∑, qk,0 , δk , Ak > , respectively, which are given below. </p>
+                                <p>      Mu = < Qu , ∑, qu,0 , δu , Au > : </p>
+                                <p>Qu = Q1 UQ2 U{{opening}} qu,0 {{closing}} , where qu,0 is a state which is neither in Q1 nor in Q2 . 
+                                  δu = δ1 Uδ2 ꓴ{{opening}} (qu,0, ꓥ, {{opening}} q1,0 , q2,0 {{closing}} ) {{closing}} , that is δu(qu,0,ꓥ) = {{opening}} q1,0 , q2,0 {{closing}} . Note that δu(qu,0, a ) = φfor all a in ∑. 
+                                  Au = A1 UA2 </p>
+                                  <p> Mc = < Qc , ∑, qc,0 , δc , Ac > : <p>
+                                    <p>Qc = Q1 UQ2 </p>
+                                    <p> qc,0 = q1,0 </p>
+                                    <p>δc = δ1 Uδ2 U{{opening}} (q, ꓥ, {{opening}} q2,0 {{closing}}  ) | q ϵA1 {{closing}}  </p>
+                                    <p>Ac = A2 </p>
+                                      <p>  Mk = < Qk , ∑, qk,0 , δk , Ak > : </p>                                                                                                     
+                                      <p>Qk = Q1 U{{opening}} qk,0 } , where qk,0 is a state which is not in Q1 . </p>
+                                     <p>δk = δ1 U{{opening}} (qk,0, ꓥ, {{opening}} q1,0 {{closing}}  ) {{closing}}  U{{opening}} (q, ꓥ, {{opening}} qk,0 {{closing}}  ) | q ϵA1 {{closing}}  </p>
+                                           <p>Ak = {{opening}} qk,0 {{closing}}  </p>
+                                           <p>These NFA-ꓥs are illustrated below. </p>
+                                           <p>
+                                            <img src="../../assets/toc/282.png" class="img-fluid rounded " alt="...">
+                                          </p>
+                                             <p>
+                                              It can be proven, though we omit proofs, that these NFA-ꓥs , Mu, Mc and Mk , in fact accept L1UL2 , L1L2 and L1*, respectively. </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="11" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                                <h5> 9.State recursive definition of regular expression and construct a regular expression corresponding to the state transition diagram as shown in figure below:</h5>
+                              <p>
+                                    <b>Solution : Statement −</b>
+                              </p>
+                              <p> Sol- Regular Expressions are used to denote regular languages. An expression is regular if:</p>
+                               <li> ɸ is a regular expression for regular language ɸ.</li>
+                               <li>ɛ is a regular expression for regular language {{opening}}ɛ{{closing}}.</li>
+                               <li>If a ∈ Σ (Σ represents the input alphabet), a is regular expression with language {{opening}}a{{closing}}.</li>
+                               <li>If a and b are regular expression, a + b is also a regular expression with language {{opening}}a,b{{closing}}</li>
+                               <li>If a and b are regular expression, ab (concatenation of a and b) is also regular.</li>
+                               <li>If a is regular expression, a* (0 or more times a) is also regular.</li>
+                              <p>q0=q2 0+ϵ</p> 
+                              <p>q1=q0 0+q1 0</p> 
+                              <p>q2=q0 1+q1 1+q2 1</p> 
+                              <p>=q0 1+(q0 0+q1 0)1+q2 1</p> 
+                              <p>=q0 1+q0 01+q1 01+q2 1</p> 
+                              <p>=q0 1+q0 01+ (q0 0+q1 0)01+q2 1</p> 
+                              <p>=q0 1+q0 01+ q0 001+q1 001+q2 1</p> 
+                              <p>=q0( 1+ 01+  001)+q1 001+q2 1</p> 
+                              <p>=q0( 1+ 01+  001)+ (q0 0+q1 0)001+q2 1</p> 
+                              <p>If we solve further we get q1 again and again. So we cannot find the value of q2 in terms of q0. </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5> 10.Prove that the complement, homomorphism and inverse homomorphism, closure of a regular language is regular.</h5>
+                            <p>
+                                  <b>Solution :∑ ={{opening}}0,1{{closing}}</b>
+                            </p>
+                            Complement-
+                            <p>Regular Languages are closed under complementation, i.e., if L is regular then L = Σ∗\L is also regular. </p>
+                                <b>Proof. </b>
+                                <li> If L is regular, then there is a DFA M = (Q,Σ,δ,q0,F) such that L = L(M). </li>
+                                 <li>Then, M = (Q,Σ,δ,q0,Q\F) (i.e., switch accept and non-accept states) accepts L.</li>
+                                  <b>Homomorphism-</b>
+                                  <p>Regular languages are closed under homomorphism, i.e., if L is a regular language and h is a homomorphism, then h(L) is also regular.</p>
+                                      <p><b>Proof.</b>We will use the representation of regular languages in terms of regular expressions to argue this.</p>
+                                      <li>Deﬁne homomorphism as an operation on regular expressions • Show that L(h(R)) = h(L(R)) • Let R be such that L = L(R). Let R0 = h(R). Then h(L) = L(R0).</li>
+                                       <p>Inverse Homomorphism-</p>
+                                       <p>Regular languages are closed under inverse homomorphism, i.e., if L is regular and h is a homomorphism then h−1(L) is regular.</p>
+                                         <b>Proof. </b>
+                                       <p>We will use the representation of regular languages in terms of DFA to argue this. Given a DFA M recognizing L, construct an DFA M0 that accepts h−1(L)</p>
+                                          <li> On input w M0 will run M on h(w) and accept if M does.</li>
+                            </div>
+                        </div>
+                    </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="12" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                                <h5> UNIT-3: Regular and Non-Regular Grammar</h5>
+                              <p>
+                                1.Find the CFG for language L={{opening}}|n+m is even{{closing}}.
+                                OR
+                                Design CFG for the language consisting of all strings of even length over {{opening}}a,b{{closing}}.
+                              </p>
+                              <p> Sol-</p>
+                              
+                              <p> L={{opening}}|n+m is even {{closing}}.</p>
+                              <p>G={{opening}}V,T,P,S{{closing}}</p>
+                              <p>V={{opening}}S,A{{closing}}</p>
+                              <p>T={{opening}}a,b{{closing}}</p>
+                              <p>Production, P:</p>
+                              <p>S -> AaBb|AB</p>
+                              <p>A -> aaA|ϵ</p>
+                              <p>B -> bbB|ϵ</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5> 2.Define derivation time. Show the derivation tree for string ‘aabbbb’ with the following grammar S->AB/ϵ, A->aB, B->Sb.    (10 Marks)</h5>
+                            <p>
+                                  <b>Solution :</b>
+                            </p>
+                            Derivation Tree-                       
+                                 <p>Derivation tree is a graphical representation for the derivation of the given production rules
+                                    for a given CFG. It is the simple way to show how the 
+                                    can be done to obtain some string from a given set of production rules. The derivation tree is also called a parse tree. </p>
+                                    <p>Parse tree follows the precedence of operators. The deepest sub-tree traversed first. So, the operator in the parent node
+                                       has less precedence over the operator in the sub-tree.</p>
+                                       <p>A parse tree contains the following properties:</p>
+                                <p>1.The root node is always a node indicating start symbols.</p> 
+                                <p>2.The derivation is read from left to right.</p> 
+                                <p>3.The leaf node is always terminal nodes.</p> 
+                                <p>4.The interior nodes are always the non-terminal nodes..</p> 
+                                  <p>Derivation tree for the string ‘aabbbb’ is:</p>
+                                  <p>
+                                    <img src="../../assets/toc/32.png" class="img-fluid rounded " alt="...">
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="13" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                              <p>
+                                3.Consider the grammar with the production. 
+                                Compute the string aababbb with the left most and right most derivation. Draw the derivation table.   (10 marks){{opening}}a,b{{closing}}.
+                              </p>
+                              <p> Sol-</p>
+                             <p>G=( {{opening}}S{{closing}}, {{opening}}a,b{{closing}},P,S)</p> 
+                             <p>Production rules:  </p>
+                             <p>S-> aSS   --------(i)    </p>
+                             <p> S->b        --------(ii)</p>
+                                <p>Left most derivation:</p>
+                               <p>S => aSS            (from (i))</p>
+                                <p>=>aaSSS        (from (i))</p>
+                                  <p>=>aabSS        (from (ii))</p>
+                                <p> =>aabaSSS     (from (i))</p>
+                                <p>=>aababSS      (from (ii))</p>
+                                 <p>=>aababbS       (from (ii))</p>
+                                 <p> =>aababbb        (from (ii))</p>
+                                   <p>Right most derivation:</p>
+                                   <p>S => aSS            (from (i))</p>
+                                   <p>=>aSb              (from (ii))</p>
+                                    <p>=>aaSSb           (from (i))</p>
+                                    <p>=>aaSaSSb         (from (i))</p>
+                                      <p>=>aaSaSbb          (from (ii))</p>
+                                      <p>=>aaSabbb         (from (ii))</p>
+                                    <p>=>aababbb          (from (ii))</p>
+                                         <p>Derivation Tree:</p>
+                                         <p>
+                                          <img src="../../assets/toc/33.png" class="img-fluid rounded " alt="...">
+                                        </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5>4.Define parse tree. Find parse tree for the string abbcde considering the productions.</h5>
+                               <p>S-> aAcBe</p> 
+                               <p>A->Ab</p> 
+                               <p>A->b</p> 
+                               <p>B->d</p> 
+                               <p>Is this ambiguous? Justify.                            (07 Marks)</p> 
+                                Sol-
+                            <p>
+                                  <b>Solution :</b>
+                            </p>
+                                                 
+                                 <p>Parse tree is a graphical representation for the derivation of the given production rules for a given CFG.
+                                    It is the simple way to show how the derivation can be done to obtain some string from a given set of 
+                                    production rules. The parse tree is also called a parse derivation tree. </p>
+                                    <p>Parse tree follows the precedence of operators. The deepest sub-tree traversed first. So, 
+                                      the operator in the parent node has less precedence over the operator in the sub-tree..</p>
+                                       <p>A parse tree contains the following properties:</p>
+                                <p>1.The root node is always a node indicating start symbols.</p>
+                                <p>2.The derivation is read from left to right.</p>
+                                <p>3.The leaf node is always terminal nodes.</p>
+                                <p>4.The interior nodes are always the non-terminal nodes.</p>
+                                <p>Parse tree for the string ‘abbcde’:</p>
+                                 
+                                    <img src="../../assets/toc/341.png" class="img-fluid rounded " alt="...">
+                                    <p>Left most derivation:</p>
+                                 
+                                    <img src="../../assets/toc/342.png" class="img-fluid rounded " alt="...">
+                                    <p>Right most derivation:</p>
+                                 
+                                    <img src="../../assets/toc/343.png" class="img-fluid rounded " alt="...">
+                                    <p>As both the derivation tree are equal. Hence, the given grammar is not ambiguous.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="14" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                              <h5>
+                                5.Define ambiguity. Show that the grammar G with following production is ambiguous. 
+                              </h5>
+                              <p>S->a|aAb|abSb</p>
+                              <p> A->aAAb|bS</p>
+                              <p> Sol-</p>
+                              <b>Ambiguity in Grammar</b> 
+                               <p> A grammar is said to be ambiguous if there exists more than one leftmost derivation or more 
+                                 than one rightmost derivation or more than one parse tree for the given input string. If the 
+                                 grammar is not ambiguous, then it is called unambiguous.</p>
+                                <p>
+                               If the grammar has ambiguity, then it is not good for compiler construction.
+                                No method can automatically detect and remove the ambiguity, but we can remove
+                                 ambiguity by re-writing the whole grammar without ambiguity. </p>
+                                 <p>Given Grammar:</p>
+                                 <p>S->a|aAb|abSb</p>
+                                 <p>A->aAAb|bS</p>
+                                 <p>Let, string: “abab”  (if the strings form two left most derivation tree or two right most derivation tree then it will be ambiguous grammar)</p>
+                                  <b>(i) Left most derivation:</b>
+                                  <p>S-> aAb</p>
+                                  <p>->abab</p>
+                                  <b>(ii)Again left most derivation:</b>
+                                  <p>S-> aAb</p>
+                                  <p>->abSb</p>
+                                  <p>->abab</p>
+                             <p>Parse tree for (i) derivation:</p> 
+                                         <p>
+                                          <img src="../../assets/toc/351.png" class="img-fluid rounded " alt="...">
+                                        </p>
+                                        <p>Parse tree for (ii) derivation:</p> 
+                                         <p>
+                                          <img src="../../assets/toc/352.png" class="img-fluid rounded " alt="...">
+                                        </p>
+                                        <p>Since, there are two left most derivation tree, therefore grammar is ambiguous.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5>6.Find the language generated by the following grammar:</h5>
+                               
+                               
+                                  <b>Solution :</b>
+                                 <p>S-> aAb|ab, A->bAa, A->ϵ</p> 
+                                 <p>Sol- Given grammar is:</p> 
+                                 <p>S-> aAb|ab, A->bAa, A->ϵ</p> 
+                                 <p>Minimum string which can be generated is:   ab</p> 
+                                 <p>S-> ab or S->aAb->ab        (as A->ϵ)</p> 
+                                 <p>S->aAb->abAab</p> 
+                                 <p>..</p> 
+                                 <p>..</p> 
+                                 <p>..</p> 
+                                 <p>..</p> 
+                                 <p>->(a^n)(b^n)   where n>=0</p> 
+                                 <p>So the language of grammar is L(G)= {{opening}}(a^n)(b^n) |n>=0{{closing}}</p> 
+                                  
+                            </div>
+                        </div>
+                    </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="15" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                              <h5>
+                                7.Define context free grammar. Find a context free grammar for the following language:
+                                L={{opening}}|n,m>=0{{closing}}
+                              </h5>
+                              <p>Sol- CFG stands for context-free grammar. It is is a formal grammar which is used to generate 
+                                all possible patterns of strings in a given formal language. Context-free grammar G can be 
+                                defined by four tuples as:</p>  
+                               <p>G = (V, T, P, S)    </p>
+                                   <p>Where,</p> 
+                                   <p> G is the grammar, which consists of a set of the production rule. It is used to generate the string of a language.</p> 
+                                    <p>T is the final set of a terminal symbol. It is denoted by lower case letters.</p>  
+                                      <p>V is the final set of a non-terminal symbol. It is denoted by capital letters.</p>  
+                                     <p> P is a set of production rules, which is used for replacing non-terminals symbols(on the left
+                                     side of the production) in a string with other terminal or non-terminal symbols(on the right
+                                      side of the production).</p>  
+                                  <p>S is the start symbol which is used to derive the string. We can derive the string by repeatedly 
+                                    replacing a non-terminal by the right-hand side of the production until all non-terminal have been 
+                                    replaced by terminal symbols.</p>  
+                                   <li> If string starts with ‘a’ then no. of a’s must follow b’s and the no. of b’s are twice than 
+                                     the no. of a’s.</li> 
+                                     <li> If string does not start with a after any b or c, and no n after any c.</li> 
+                                    <p> Let G=(,P,S), ={{opening}}S,A,B {{closing}} , ={{opening}}a,b,c{{closing}}</p>
+                                    <p> P is defined as:</p>
+                                    <p> S->AB</p>
+                                    <p> A->aAbb|ϵ</p>
+                                    <p> B->cB|ϵ</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <h5>8.Convert the CFG into GNF.</h5>
+                              <h5>S-> aSbA</h5>
+                              <h5>A->Sa/a</h5>
+                               <b>Solution :</b>
+                              <p> S-> aSbA</p>
+                              <p>A->Sa/a</p>
+                              <p>Sol- Introduce:</p>
+                              <p>C->a</p>
+                              <p>B->b</p>
+                              <p>Grammar will be:</p>
+                              <p>S->CSBA</p>
+                              <p>C->a</p>
+                              <p>A->SC/a</p>
+                              <p>B->b</p>
+                              <p>Let S,A,B,C is A1,A2,A3,A4  respectively.</p>
+                              <p>A1->A4A1A3A2</p>
+                              <p>A2->A1A4|a</p>
+                              <p>A4->a</p>
+                              <p> A3->b</p>
+                              <p>All productions are fine except, A2->A1A4</p>
+                              <p>A2->A4A1A3A2A4</p>
+                                <p>A2->A4A1A3A2A4|a</p>
+                                  <p>Our grammar is:</p>
+                                    <p>A1->A4A1A3A2</p>
+                                      <p>A2->A4A1A3A2A4|a</p>
+                                        <p>A4->a</p>
+                                          <p>A3->b</p>
+                                            <p>Substituting A4 in A1 and A2,</p>
+                                              <p> We have,   A1->aA1A3A2</p>
+                                                <p>A2-> aA1A3A2A4|a</p>
+                                                  <p>A3->b</p>
+                                                    <p>A4->a</p>
+                                                      <p>Which is GNF.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="16" value="none" >
+        <ng-template matTabContent>
+          <div> 
+              <div class="row total">
+                  <mat-card id="second">
+                      <div class="card">
+                          <div class="row">
+                              <div class="col-md-12">
+                              <h5>
+                                9.Explain the Chomsky hierarchy of languages. Determine the type of the following grammar:
+                              </h5>
+                              <p>S->aAb|ϵ</p>
+                              <p>A->aA|Ab|a|b</p>  
+                              <p>Sol- Chomsky Hierarchy</p>
+                              <p>Chomsky Hierarchy represents the class of languages that are accepted by the different machine. 
+                                The category of language in Chomsky's Hierarchy is as given below: </p>
+                                <p>1.Type 0 known as Unrestricted Grammar.</p>
+                                <p>2.Type 1 known as Context Sensitive Grammar.</p>
+                                <p>3.Type 2 known as Context Free Grammar.</p>
+                                <p>This is a hierarchy. Therefore every language of type 3 is also of type 2, 1 and 0. 
+                                  Similarly, every language of type 2 is also of type 1 and type 0, etc.</p>
+                                 <h6>Type 0 Grammar:</h6> 
+                                 <p>Type 0 grammar is known as Unrestricted grammar. There is no restriction on the grammar rules of these types of languages.
+                                    These languages can be efficiently modeled by Turing machines.</p> 
+                                  Eg:
+                                  <p>1.bAa → aa</p>  
+                                    <p>2.S → s  </p>
+                                 <b>Type 1 Grammar:</b>
+                                 <p>Type 1 grammar is known as Context Sensitive Grammar. The context sensitive grammar is used to represent 
+                                   context sensitive language. The context sensitive grammar follows the following rules:</p> 
+                                  <li>The context sensitive grammar may have more than one symbol on the left hand side of their production rules.</li> 
+                                  <li>The number of symbols on the left-hand side must not exceed the number of symbols on the right-hand side.</li> 
+                                    <li>The rule of the form A → ε is not allowed unless A is a start symbol. It does not occur on the right-hand side of any rule. </li> 
+                                      <li>The Type 1 grammar should be Type 0. In type 1, Production is in the form of V → T</li> 
+                                       <p>Where the count of symbol in V is less than or equal to T.</p> 
+                                         Eg:
+                                        <p>1.S → AT</p>   
+                                        <p>2.T → xy  </p> 
+                                        <p>3.A → a  </p> 
+                                        <b>Type 2 Grammar:</b>
+                                       <p>Type 2 Grammar is known as Context Free Grammar. Context free languages are the languages which can be 
+                                         represented by the context free grammar (CFG). Type 2 should be type 1. The production rule is of the form A → α  </p>  
+                                       <p>Where A is any single non-terminal and is any combination of terminals and non-terminals.</p> 
+                                            <p> Eg : </p> 
+                                          <p>1.A → aBb</p>    
+                                          <p> 2.A → b  </p>  
+                                          <p>3.B → a </p>   
+                                           <b>Type 3 Grammar:</b>
+                                           <p>Type 3 Grammar is known as Regular Grammar. Regular languages are those languages which can be described using
+                                              regular expressions. These languages can be modeled by NFA or DFA.</p>
+                                            <p>Type 3 is most restricted form of grammar. The Type 3 grammar should be Type 2 and Type 1. Type 3 should be in the form of   V → T*V / T*  </p> 
+                                             <p>Eg- A → xy  </p>
+                                           <h6>Numerical:</h6>  
+                                             <p>S->aAb|ϵ</p>
+                                             <p>A->aA|Ab|a|b</p>
+                                              <p>This grammar is type-2 grammar ie context free grammar as it contains only type-2 production. Also it is of form:</p> 
+                                                <p> A->a, where Aϵ  and aϵ( ꓴ∑)*.</p>
+                              </div>
+                          </div>
+                      </div>
+                    
+                      </mat-card>
+              <div class="col-md"></div>
+              </div>
+          </div> 
+        </ng-template>
+      </mat-tab>
+  </mat-tab-group>
+</div>
+<div class="col-md"></div>
+</div>
+  <div class="row previous">
+  <button mat-raised-button  color="primary" (click)="tabGroup.selectedIndex=tabGroup.selectedIndex-1" style="margin-right: 3%;">Previous</button>
+  <button mat-raised-button  color="primary"  (click)="tabGroup.selectedIndex=tabGroup.selectedIndex+1">Next</button>
+</div>
+</body>

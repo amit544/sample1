@@ -1,0 +1,15 @@
+a{
+    text-align: center;
+    text-decoration: none;
+}
+hr{
+    margin-bottom: 5%;
+}
+.row{
+    margin-right: 15px;
+}
+@media only screen and (max-width: 668px) {
+    .card{
+        margin-left: 6%;
+    }
+}

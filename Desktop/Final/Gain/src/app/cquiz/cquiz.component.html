@@ -1,0 +1,329 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <mat-card class="w-100">
+    <mat-accordion >
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                Quiz 1
+            </mat-panel-title>
+          </mat-expansion-panel-header> 
+            <div class="row">
+                    <div class="col-md-11">
+                        <div class="card">
+                      <span class="row">Q 1. <p>{{preprocesser}}</p> </span>  
+                        int main ( ) {{opening}}
+                    <p> int a = 1, 2, 3;</p>
+                      <div> printf("%d", a);</div>
+                       <div>return 0;</div> 
+                       {{closing}}
+                        </div>
+                        <div class="option">
+                        <div class="row" id="wrong0">
+                         <a (click)="wrong0( )">A) 1</a>
+                        </div> 
+                        <div class="row ">
+                         <a (click)="wrong0( )">B) 3</a>
+                        </div> 
+                        <div class="row" id="right0">
+                         <a (click)="right0( )">C) compile time error</a>
+                        </div> 
+                        <div class="row">
+                         <a (click)="wrong0( )">D) 2</a>
+                         </div>
+                        </div>
+                        
+                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="card">
+                  <span class="row">Q 2. <p>{{preprocesser}}</p> </span>  
+                    int main ( ) {{opening}}
+                <p> int a = (1, 2, 3);</p>
+                  <div> printf("%d", a);</div>
+                   <div>return 0;</div> 
+                   {{closing}}
+                    </div>
+                    <div class="option">
+                    <div class="row">
+                     <a (click)="wrong1( )">A) 1</a>
+                    </div> 
+                    <div class="row "id="right1">
+                     <a (click)="right1()">B) 3</a>
+                    </div> 
+                    <div class="row" >
+                     <a (click)="wrong1( )">C) compile time error</a>
+                    </div> 
+                    <div class="row">
+                     <a (click)="wrong1( )">D) 2</a>
+                     </div>
+                    </div>
+                    
+            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11">
+                <div class="card">
+              <span class="row">Q 3. <p>{{preprocesser}}</p> </span>  
+                int main ( ) {{opening}}
+                <p>int a;</p>
+               <p> a = 1, 2, 3;</p>
+              <div> printf("%d", a);</div>
+               <div>return 0;</div> 
+               {{closing}}
+                </div>
+                <div class="option">
+                <div class="row" id="right2">
+                 <a (click)="right2( )">A) 1</a>
+                </div> 
+                <div class="row ">
+                 <a (click)="wrong2()">B) 3</a>
+                </div> 
+                <div class="row" >
+                 <a (click)="wrong2( )">C) compile time error</a>
+                </div> 
+                <div class="row">
+                 <a (click)="wrong2( )">D) 2</a>
+                 </div>
+                </div>
+                
+        
+        </div>
+         </div>
+         <div class="row">
+            <div class="col-md-11">
+                <div class="card">
+              <span class="row">Q 4. <p>{{preprocesser}}</p> </span>  
+                int main ( ) {{opening}}
+                <p>signed char a;</p>
+               <p> for(a=0;a<=127;a++){{opening}}</p>
+              <div> printf("%d", a);</div>
+               <div>return 0;</div> 
+               {{closing}}
+                </div>
+                <div class="option">
+                <div class="row" >
+                 <a (click)="wrong3()">A)Print 0 to 127</a>
+                </div> 
+                <div class="row"id="right3">
+                 <a (click)="right3( )">B) Print an infinite loop</a>
+                </div> 
+                <div class="row" >
+                 <a (click)="wrong3( )">C) run time error</a>
+                </div> 
+                <div class="row">
+                 <a (click)="wrong3( )">D) 0</a>
+                 </div>
+                </div>
+                
+        
+        </div>
+         </div>
+         <div class="row">
+            <div class="col-md-11">
+                <div class="card">
+              <span class="row">Q 5. <p>{{preprocesser}}</p> </span>  
+                int main ( ) {{opening}}
+                <p>int a=2,i=1;</p>
+               <p> switch(a){{opening}}</p>
+               <p> case 0: i +=50;</p>
+               <p> case 1: i +=100;</p>
+               <p> case 2: i +=50;</p>
+               <p> case 3: i +=100;</p>
+               <p> {{closing}}</p>
+              <div> printf("%d", a);</div>
+               <div>return 0;</div> 
+               {{closing}}
+                </div>
+                <div class="option">
+                <div class="row" >
+                 <a (click)="wrong4()">A)100</a>
+                </div> 
+                <div class="row">
+                 <a (click)="wrong4()">B) 101</a>
+                </div> 
+                <div class="row" id="right4" >
+                 <a (click)="right4( )">C) 251</a>
+                </div> 
+                <div class="row">
+                 <a (click)="wrong4( )">D) 0</a>
+                 </div>
+                </div>
+                
+        
+        </div>
+         </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+</mat-card>
+<mat-card class="w-100">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Quiz 2
+        </mat-panel-title>
+      </mat-expansion-panel-header> 
+        <div class="row">
+                <div class="col-md-11">
+                    <div class="card">
+                  <span class="row">Q 1. <p>{{preprocesser}}</p> </span>  
+                    int main ( ) {{opening}}
+                
+                  <div> printf("%%Gain&Gain%%");</div>
+                   <div>return 0;</div> 
+                   {{closing}}
+                    </div>
+                    <div class="option">
+                    <div class="row">
+                     <a (click)="wrong10( )">A) %%Gain&Gain%%</a>
+                    </div> 
+                    <div class="row ">
+                     <a (click)="wrong10( )">B) Syntax error</a>
+                    </div> 
+                    <div class="row" id="right10">
+                     <a (click)="right10( )">C) %Gain&Gain%</a>
+                    </div> 
+                    <div class="row">
+                     <a (click)="wrong10( )">D) None</a>
+                     </div>
+                    </div>
+                    
+            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11">
+                <div class="card">
+              <span class="row">Q 2. <p>{{preprocesser}}</p> </span>  
+                int main ( ) {{opening}}
+              <div> printf("%3$d %4$d %1$d %2$d",7 ,6, 4, 1);</div>
+               <div>return 0;</div> 
+               {{closing}}
+                </div>
+                <div class="option">
+                <div class="row" id="right11">
+                 <a (click)="right11( )">A) 4 1 7 6</a>
+                </div> 
+                <div class="row" >
+                 <a (click)="wrong11()">B) 7 6 4 1</a>
+                </div> 
+                <div class="row" >
+                 <a (click)="wrong11( )">C) compile time error</a>
+                </div> 
+                <div class="row">
+                 <a (click)="wrong11( )">D) 1 4 6 7</a>
+                 </div>
+                </div>
+                
+        
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-11">
+            <div class="card">
+          <span class="row">Q 3. <p>{{preprocesser}}</p> </span>  
+            int main ( ) {{opening}}
+            <p>int i;</p>
+           <p> if(i=6,7,8)</p>
+          <div> printf("Gain&Gain ");</div>
+          <p>else</p>
+          <p>printf("Gain");</p>
+          printf("%d",i);
+           <div>return 0;</div> 
+           {{closing}}
+            </div>
+            <div class="option">
+            <div class="row" >
+             <a (click)="wrong12()">A)Gain&Gain 8</a>
+            </div> 
+            <div class="row ">
+             <a (click)="wrong12()">B)Gain 8</a>
+            </div> 
+            <div class="row" id="right12">
+             <a (click)="right12( )">C)Gain&Gain 6</a>
+            </div> 
+            <div class="row">
+             <a (click)="wrong12( )">D)Gain 6</a>
+             </div>
+            </div>
+            
+    
+    </div>
+     </div>
+     <div class="row">
+        <div class="col-md-11">
+            <div class="card">
+          <span class="row">Q 4. <p>{{preprocesser}}</p> </span>  
+            int main ( ) {{opening}}
+            <p>int i=9;</p>
+           <p>if(i==9){{opening}}</p>
+            <p>int i=27;</p>
+            <p> {{closing}}</p>
+          <div> printf("%d", i);</div>
+           <div>return 0;</div> 
+           {{closing}}
+            </div>
+            <div class="option">
+            <div class="row" >
+             <a (click)="wrong13()">A)27</a>
+            </div> 
+            <div class="row" id="right13">
+             <a (click)="right13( )">B) 9</a>
+            </div> 
+            <div class="row" >
+             <a (click)="wrong13( )">C) run time error</a>
+            </div> 
+            <div class="row">
+             <a (click)="wrong13( )">D)none</a>
+             </div>
+            </div>
+            
+    
+    </div>
+     </div>
+     <div class="row">
+        <div class="col-md-11">
+            <div class="card">
+          <span class="row">Q 5. <p>{{preprocesser}}</p> </span>  
+            int main ( ) {{opening}}
+            <p>int a=10,b=11;</p>
+           <p> if(a==10){{opening}}</p>
+           <p> int a=3;</p>
+           <p>  int b=4;</p>
+           <p> {{closing}}</p>
+          <p> printf("%d %d", a,b);</p>
+           <p>return 0;</p> 
+           {{closing}}
+            </div>
+            <div class="option">
+            <div class="row" >
+             <a (click)="wrong14()">A)3 4</a>
+            </div> 
+            <div class="row"  id="right14" >
+             <a (click)="right14()">B)10 4</a>
+            </div> 
+            <div class="row">
+             <a (click)="wrong14()">C)10 11</a>
+            </div> 
+            <div class="row">
+             <a (click)="wrong14()">D)3 11 </a>
+             </div>
+            </div>
+            
+    
+    </div>
+     </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>
+</div>
+  <div class="col-md-2">
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=gainngain-21&marketplace=amazon&region=IN&placement=9387284492&asins=9387284492&linkId=09b8fe6648240106c313463d33dcc5e0&show_border=true&link_opens_in_new_window=true"></iframe>
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=gainngain-21&marketplace=amazon&region=IN&placement=9332549443&asins=9332549443&linkId=15c9341863d66d86111ee91d7c7bfe70&show_border=true&link_opens_in_new_window=true"></iframe>
+  </div>
+</div>

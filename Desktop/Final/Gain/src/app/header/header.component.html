@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta content="Gain&Gain" name="title" />
+<title>Gain&Gain||Gate Free Notes ||Quizzes||Aptitude||Academics</title>
+<meta name="Description" content="Gain&Gain is a website  where student can read Gate Free Notes , Important Questions for Placement And University Previous Year Questions">
+<meta name="Keywords" content="Gate,Aptitude,placement,Quizzes,Placement,Gain&Gain,gainngain">
+	<meta content="website" property="og:type" />
+	 <meta content="https://www.gainngain.in/" property="og:url" />
+	<meta name="google-site-verification" content="oWDGEP2iJvHxwi_VFrhFLrw4PrQ6Cbpv5CNBlof3u9w" />
+	<meta content="gainngain - Gate ACADEMICS Prepartaions" name="msapplication-tooltip" />
+	<meta content="Gain&Gain" property="og:site_name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164805726-1"></script>
+  </head>
+  <body>
+<div id="mySidenav" class="sidenav">
+ <aside [hidden]="!menu" (click)="handleAsideClick($event)"></aside>
+  <a routerLink="/home" (click)="closeNav()">Home</a>
+   <div ngbDropdown class="d-inline-block">
+    <a class="btn" id="dropdownBasic1" ngbDropdownToggle >Tutorials</a>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem routerLink="OS" (click)="closeNav()">Operatng System</button>
+      <button ngbDropdownItem routerLink="Toc" (click)="closeNav()">TOC</button>
+      <button ngbDropdownItem (click)="closeNav()">C programming</button>
+    </div>
+  </div>
+  <div ngbDropdown class="d-inline-block">
+    <a class="btn" id="dropdownBasic1" ngbDropdownToggle>University Questions</a>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem routerLink="/Tocuniversity"(click)="closeNav()"> TOC</button>
+      <button ngbDropdownItem routerLink="/osuniversity" (click)="closeNav()">Operating System</button>
+      <button ngbDropdownItem routerLink="/datastructure" (click)="closeNav()">Data Structure</button>
+    </div>
+  </div>
+  <div class="nav-item active">
+    <a class="nav-link" routerLink="/cquiz" (click)="closeNav()" style="font-size: 100%;">C Quiz</a>
+  </div>
+  <div class="nav-item active">
+    <a class="nav-link"  routerLink="/aptitude" (click)="closeNav()" style="font-size: 100%;">Aptitude</a>
+  </div>
+  <a routerLink="/Aboutus" (click)="closeNav()" style="font-size: 100%;">Aboutus</a> 
+  <a routerLink="/contact" (click)="closeNav()" style="font-size: 100%;">Contact</a> 
+  <a routerLink="/gatesyllbous"  (click)="closeNav()" style="font-size: 100%;">Gate 2020</a>
+   <div class="row">
+  <a href="https://www.facebook.com/GainGain-100725088303326/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://instagram.com/gainndgain?igshid=a5ive16oymaj"target="_blank" class="fa fa-instagram"></a>
+    <a href="https://mail.google.com/" class="fa fa-envelope" target="_blank"></a>
+    <a href="https://youtu.be/MhYl1uXKAhc" class="fa fa-youtube" target="_blank"></a>
+  </div>
+
+</div>
+
+<span style="font-size:30px;cursor:pointer"  class="button row navbar-light bg-light" style="padding-left: 10%;padding-top: 5%;font-size: 150%;"> <span (click)="openNav()">&#9776; </span> <a class="navbar-brand" href="#" class="logo1"  ><h1>Gain&Gain</h1></a></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" class="logo"><h1>Gain&Gain</h1></a>
+ 
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="margin-left: 80px;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <div ngbDropdown class="d-inline-block">
+          <a class="btn" id="dropdownBasic1" ngbDropdownToggle>Tutorials</a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem routerLink="OS">Operatng System</button>
+            <button ngbDropdownItem routerLink="Toc">TOC</button>
+            <button ngbDropdownItem routerLink="/c">C programming</button>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div ngbDropdown class="d-inline-block">
+          <a class="btn" id="dropdownBasic1" ngbDropdownToggle>University Questions</a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem routerLink="/Tocuniversity">TOC</button>
+            <button ngbDropdownItem routerLink="/osuniversity">Operating System</button>
+            <button ngbDropdownItem routerLink="/datastructure">Data Structure</button>
+          </div>
+        </div>
+      </li >
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/cquiz">C Quiz<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link"  routerLink="/aptitude">Aptitude<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/Aboutus">About us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/contact">Contact<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/gatesyllbous">Gate 2020<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</body>
+</html>
+<!-- <mat-sidenav-container class="sidenav-container" [hasBackdrop]="true">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="over"
+      
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list >
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <div class="row ">
+        <div class="logo">Gain&Gain</div>
+        <div class="row laptop">
+          <div class="col tutorial">
+            <div ngbDropdown class="d-inline-block">
+              <a class="btn" id="dropdownBasic1" ngbDropdownToggle>Tutorials</a>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem routerLink="OS">Operatng System</button>
+                <button ngbDropdownItem routerLink="Toc">TOC</button>
+                <button ngbDropdownItem>C programming</button>
+              </div>
+            </div>
+          </div>
+          <div class="col university">
+            <div ngbDropdown class="d-inline-block">
+              <a class="btn" id="dropdownBasic1" ngbDropdownToggle>University Questions</a>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>TOC</button>
+                <button ngbDropdownItem>Operating System</button>
+                <button ngbDropdownItem>Data Structure</button>
+              </div>
+            </div>
+          </div>
+          <div class="col"> Quiz</div>
+      </div>
+      </div>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
